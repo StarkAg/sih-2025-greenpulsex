@@ -176,11 +176,51 @@ curl -X POST http://localhost:8000/api/v1/predict \
 3. **Deploy** using Docker or cloud services
 4. **Monitor** with Prometheus and Grafana
 
+## 🤖 ML Notebooks
+
+Explore and analyze data using Jupyter notebooks:
+
+```bash
+# Start Jupyter
+cd ml/notebooks
+jupyter notebook
+
+# Or use JupyterLab
+jupyter lab
+```
+
+**Available Notebooks:**
+- `01_data_exploration.ipynb` - Exploratory data analysis
+- `02_model_training.ipynb` - Model training and evaluation
+
+## 🧪 Testing
+
+### Run Tests
+
+```bash
+# Backend tests
+docker-compose exec backend pytest
+
+# Frontend tests
+cd frontend && npm test
+
+# E2E tests
+npm run test:e2e
+```
+
+### Test Structure
+
+- **Unit Tests**: `tests/unit/` - Test individual functions
+- **Integration Tests**: `tests/integration/` - Test API endpoints
+- **E2E Tests**: `tests/e2e/` - Test complete user flows
+
 ## 📚 Documentation
 
 - **[API Documentation](docs/API.md)** - Complete API reference
 - **[Architecture Guide](docs/ARCHITECTURE.md)** - System design and components
 - **[Deployment Guide](docs/DEPLOYMENT.md)** - Production deployment instructions
+- **[ML README](ml/README.md)** - ML notebooks and data analysis
+- **[Tests README](tests/README.md)** - Testing guide
 - **[README](README.md)** - Project overview and setup
 
 ## 🆘 Support

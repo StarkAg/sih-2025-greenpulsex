@@ -73,6 +73,14 @@ SIH 2025 - GreenPulseX/
 │   │   ├── services/      # Business logic
 │   │   └── ml/           # ML pipeline
 │   └── scripts/           # Utility scripts
+├── ml/                     # ML notebooks and data
+│   ├── notebooks/         # Jupyter notebooks
+│   ├── data/              # Training datasets
+│   └── models/            # Saved model artifacts
+├── tests/                  # Test suites
+│   ├── e2e/               # End-to-end tests
+│   ├── unit/               # Unit tests
+│   └── integration/       # Integration tests
 ├── infra/                  # Infrastructure configs
 │   └── docker-compose.yml
 └── docs/                   # Documentation
